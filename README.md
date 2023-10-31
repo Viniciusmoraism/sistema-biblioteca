@@ -11,11 +11,11 @@ Esse é um programa de gerenciamento de biblioteca desenvolvido na discplina PDS
 # User Story - Sistema de Biblioteca
 Cada usuario possui diferentes atribuições.
 
-#Como aluno e professor:
+# Como aluno e professor:
 
 -> Reservar um livro.
 
--> enovar um Livro.
+-> Renovar um Livro.
 
 -> Ver livros alugados e data de entrega.
 
@@ -23,16 +23,17 @@ Cada usuario possui diferentes atribuições.
 
 -> Pagar multa.
 
-#Como Gestor:
+# Como Gestor:
+
 -> Cadastar novo usuario.
 
--> Iniar proceso de multa/ Quitar uma multa.
+-> Iniciar proceso de multa/ Quitar uma multa.
 
 -> Iniciar empresimo de livro/Receber devolução.
 
 -> Consultar livros no acervo.
 
-#Como Bibliotecario:
+# Como Bibliotecario:
 
 -> Cadastrar novos livros (inlcui autor, id e categoria).
 
