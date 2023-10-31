@@ -13,26 +13,32 @@ Cada usuario posso diferentes atribuições.
 
 Como aluno e professor,posso:
 
-1)Reservar um livro.
+-> Reservar um livro.
 
-2)Renovar um Livro.
+-> enovar um Livro.
 
-3)Ver livros alugados e data de entrega.
+-> Ver livros alugados e data de entrega.
 
-4)Consultar livros no acervo.
+-> Consultar livros no acervo.
 
-5)Pagar multa.
+-> Pagar multa.
 
-Como Gestor.:
-1)Cadastar novo usuario.
-2)Iniar proceso de multa/ Quitar uma multa.
-3)Iniciar empresimo de livro/Receber devolução.
-4)Consultar livros no acervo.
+Como Gestor:
+-> Cadastar novo usuario.
+
+-> Iniar proceso de multa/ Quitar uma multa.
+
+-> Iniciar empresimo de livro/Receber devolução.
+
+-> Consultar livros no acervo.
 
 Como Bibliotecario:
-1)Cadastrar novos livros (inlcui autor, id e categoria).
-2)Remover livros.
-3)Consultar livros no acervo.
+
+-> Cadastrar novos livros (inlcui autor, id e categoria).
+
+-> Remover livros.
+
+-> Consultar livros no acervo.
 
 
 
