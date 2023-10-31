@@ -9,9 +9,9 @@ Esse é um programa de gerenciamento de biblioteca desenvolvido na discplina PDS
 * Testes Unitários: [Doctest](https://github.com/doctest/doctest)
 
 # User Story - Sistema de Biblioteca
-Cada usuario posso diferentes atribuições.
+Cada usuario possui diferentes atribuições.
 
-Como aluno e professor,posso:
+#Como aluno e professor:
 
 -> Reservar um livro.
 
@@ -23,7 +23,7 @@ Como aluno e professor,posso:
 
 -> Pagar multa.
 
-Como Gestor:
+#Como Gestor:
 -> Cadastar novo usuario.
 
 -> Iniar proceso de multa/ Quitar uma multa.
@@ -32,7 +32,7 @@ Como Gestor:
 
 -> Consultar livros no acervo.
 
-Como Bibliotecario:
+#Como Bibliotecario:
 
 -> Cadastrar novos livros (inlcui autor, id e categoria).
 
