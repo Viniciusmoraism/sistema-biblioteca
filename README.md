@@ -27,28 +27,26 @@ Cada usuario possui diferentes atribuições.
 
 ## CRC´s
 ### Class:livro
-### ** Responsabilitys**
+### ** Responsibilities**
 
 Manter informações do livro (título, autor, etc.).
 Controlar o status de reserva do livro.
 Rastrear as datas de empréstimo e devolução para fins de multa.
 
-### **Colaborators**
-
+### **Colaborations**
 Colabora com a classe Cliente para gerenciar empréstimos e reservas.
 Colabora com a classe Bibliotecário para atualizar informações do livro.
 
 ### Class:Pessoa
-### ** Responsabilitys**
+### ** Responsibilities**
 
 Servir como uma classe abstrata base para classes derivadas.
 
-### **Colaborators**
-
+### **Colaborations**
 Colabora com as classes Cliente, Aluno, Professor, Secretário e Bibliotecário como uma superclasse com informações pessoais comuns.
 
 ### Class:Cliente
-### ** Responsabilitys**
+### ** Responsibilities**
 
 Manter informações pessoais do cliente.
 
@@ -56,52 +54,47 @@ Buscar livros na biblioteca.
 
 Alugar e reservar livros.
 
-### **Colaborators**
-
+### **Colaborations**
 Colabora com a classe Livro para gerenciar empréstimos e reservas.
 
 ### Class:Aluno
-### ** Responsabilitys**
+### ** Responsibilities**
 
 Estender as funcionalidades de um cliente.
 
 Manter informações específicas do aluno (data de ingresso, matrícula, curso).
 
-### **Colaborators**
-
+### **Colaborations**
 Colabora com a classe Cliente para buscar e alugar livros.
 
 ### Class:Professor
-### ** Responsabilitys**
+### ** Responsibilities**
 
 Estender as funcionalidades de um cliente.
 
 Manter informações específicas do professor (data de ingresso, departamento).
 
-### **Colaborators**
-
+### **Colaborations**
 Colabora com a classe Cliente para buscar e alugar livros.
 
 ### Class:Secretario
-### ** Responsabilitys**
+### ** Responsibilities**
 
 Manter informações pessoais do secretário.
 
 Realizar tarefas administrativas, como cadastro de alunos e professores, empréstimos, visualização de informações, etc.
 
-### **Colaborators**
-
+### **Colaborations**
 Colabora com as classes Cliente, Aluno, Professor, Bibliotecário, etc., para executar tarefas administrativas.
 
 ### Class:Secretario
-### ** Responsabilitys**
+### ** Responsibilities**
 
 Estender as funcionalidades de um secretário.
 
 Gerenciar o acervo de livros, incluindo adição e remoção de livros.
 
-### **Colaborators**
-
+### **Colaborations**
 Colabora com a classe Livro para atualizar o acervo de livros.
 
 
