@@ -5,6 +5,8 @@ Esse é um programa de gerenciamento de biblioteca desenvolvido na discplina PDS
 
 * Linguagem: [C++11](https://cplusplus.com/doc/)
 * Compilação: [Make](https://www.gnu.org/software/make/)
+* Documentação: [Doxygen](https://doxygen.nl/)
+* Testes Unitários: [Doctest](https://github.com/doctest/doctest)
 
 
 ## **Compilação**
