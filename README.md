@@ -25,8 +25,8 @@ Cada usuario possui diferentes atribuições.
 
 
 
-## CRC´s
-### Class:livro
+# CRC´s
+## Class:livro
 ### ** Responsibilities**
 
 Manter informações do livro (título, autor, etc.).
@@ -37,7 +37,7 @@ Rastrear as datas de empréstimo e devolução para fins de multa.
 Colabora com a classe Cliente para gerenciar empréstimos e reservas.
 Colabora com a classe Bibliotecário para atualizar informações do livro.
 
-### Class:Pessoa
+## Class:Pessoa
 ### ** Responsibilities**
 
 Servir como uma classe abstrata base para classes derivadas.
@@ -45,7 +45,7 @@ Servir como uma classe abstrata base para classes derivadas.
 ### **Colaborations**
 Colabora com as classes Cliente, Aluno, Professor, Secretário e Bibliotecário como uma superclasse com informações pessoais comuns.
 
-### Class:Cliente
+## Class:Cliente
 ### ** Responsibilities**
 
 Manter informações pessoais do cliente.
@@ -57,7 +57,7 @@ Alugar e reservar livros.
 ### **Colaborations**
 Colabora com a classe Livro para gerenciar empréstimos e reservas.
 
-### Class:Aluno
+## Class:Aluno
 ### ** Responsibilities**
 
 Estender as funcionalidades de um cliente.
@@ -67,7 +67,7 @@ Manter informações específicas do aluno (data de ingresso, matrícula, curso)
 ### **Colaborations**
 Colabora com a classe Cliente para buscar e alugar livros.
 
-### Class:Professor
+## Class:Professor
 ### ** Responsibilities**
 
 Estender as funcionalidades de um cliente.
@@ -77,7 +77,7 @@ Manter informações específicas do professor (data de ingresso, departamento).
 ### **Colaborations**
 Colabora com a classe Cliente para buscar e alugar livros.
 
-### Class:Secretario
+## Class:Secretario
 ### ** Responsibilities**
 
 Manter informações pessoais do secretário.
@@ -87,7 +87,7 @@ Realizar tarefas administrativas, como cadastro de alunos e professores, emprés
 ### **Colaborations**
 Colabora com as classes Cliente, Aluno, Professor, Bibliotecário, etc., para executar tarefas administrativas.
 
-### Class:Secretario
+## Class:Secretario
 ### ** Responsibilities**
 
 Estender as funcionalidades de um secretário.
