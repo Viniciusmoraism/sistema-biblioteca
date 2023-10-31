@@ -7,3 +7,45 @@ Esse é um programa de gerenciamento de biblioteca desenvolvido na discplina PDS
 * Compilação: [Make](https://www.gnu.org/software/make/)
 
 
+## **Compilação**
+
+```bash
+$ make
+```
+**Atenção: Criar antes um diretório _./build/_**
+
+## **Execução**
+
+```bash
+$ ./sistema_bibliotecas
+```
+
+## **Compilação Testes**
+
+```bash
+$ make test
+```
+
+## **Documentação**
+
+É necessário ter na raiz do projeto um arquivo _Doxyfile_. Um arquivo padrão pode ser gerado pelo comando:
+```bash
+$ doxygen -g
+```
+
+Para gerar a documentação, utilizar:
+
+```bash
+$ doxygen Doxyfile
+```
+ou
+```bash
+$ make docs
+```
+
+**Atenção: Criar antes um diretório _./doc/_**
+
+## **Remover arquivos auxiliares**
+```bash
+$ make clean
+```
