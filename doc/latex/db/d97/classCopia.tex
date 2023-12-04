@@ -1,0 +1,212 @@
+\hypertarget{classCopia}{}\doxysection{Referência da Classe Copia}
+\label{classCopia}\index{Copia@{Copia}}
+
+
+{\ttfamily \#include $<$Copia.\+hpp$>$}
+
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCopia_a2c8ad8b5f62e960317b724020feb2303}{Copia}} (int id\+Copia)
+\item 
+\mbox{\hyperlink{classCopia_a4bdff1c31646ef5cd0954d8c5a702f87}{$\sim$\+Copia}} ()
+\item 
+int \mbox{\hyperlink{classCopia_a90c50ff43d99199d894730d08b27ede8}{get\+Id\+Copia}} () const
+\item 
+bool \mbox{\hyperlink{classCopia_a36f314451319295835cd3477c9cd5fb5}{is\+Disponivel}} () const
+\item 
+bool \mbox{\hyperlink{classCopia_ac59f2c98c174c33a3768a74a19359e53}{is\+Reservado}} () const
+\item 
+std\+::string \mbox{\hyperlink{classCopia_a105de68762dd27c1c4198462fdf55d2a}{get\+Data\+Emprestimo}} () const
+\item 
+std\+::string \mbox{\hyperlink{classCopia_a99ad4201abe64a6048e0022a494be35a}{get\+Data\+Devolucao}} () const
+\item 
+std\+::string \mbox{\hyperlink{classCopia_ae9a9612d1781ef64b3236679472ea373}{get\+Data\+Limite\+Reserva}} () const
+\item 
+int \mbox{\hyperlink{classCopia_ace65d8ec3a560233ad962f8cc8174340}{get\+Emprestimo}} () const
+\item 
+int \mbox{\hyperlink{classCopia_a8040b81711c0edfc8b7b83446ec62452}{get\+Reserva}} () const
+\item 
+void \mbox{\hyperlink{classCopia_a442e89253ec3b8a59b38ba11a24e070a}{set\+Emprestimo}} (int emprestimo)
+\item 
+void \mbox{\hyperlink{classCopia_a5dab01503866b2c1b2b1e799dd717023}{set\+Reserva}} (int reserva)
+\item 
+void \mbox{\hyperlink{classCopia_a26677eb7fada5336b922cdc0b187362b}{set\+Data\+Emprestimo}} (const std\+::string \&data\+Emprestimo)
+\item 
+void \mbox{\hyperlink{classCopia_a6c44c85f19b4fd4dff142e56cf1d9cba}{set\+Data\+Devolucao}} (const std\+::string \&data\+Devolucao)
+\item 
+void \mbox{\hyperlink{classCopia_a24853043fdc12a4c7ff771f04117f28b}{set\+Data\+Limite\+Reserva}} (const std\+::string \&data\+Limite\+Reserva)
+\item 
+void \mbox{\hyperlink{classCopia_a1c3c1a26f003688cc967d181e7d8f6da}{informacoes}} () const
+\item 
+\mbox{\Hypertarget{classCopia_a4f082e3a2145f12cf8672f88678dda96}\label{classCopia_a4f082e3a2145f12cf8672f88678dda96}} 
+double {\bfseries get\+Multa} () const
+\item 
+\mbox{\Hypertarget{classCopia_a519eca35084264efdc089a2c91961037}\label{classCopia_a519eca35084264efdc089a2c91961037}} 
+void {\bfseries set\+Multa} (double multa)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe que representa uma cópia específica de um livro. É responsável por armazenar as informações dos empréstimos, renovações e etc. \mbox{\hyperlink{classCopia}{Copia}} deve ser utilizada primariamente dentro da classe \mbox{\hyperlink{classLivro}{Livro}}. 
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{classCopia_a2c8ad8b5f62e960317b724020feb2303}\label{classCopia_a2c8ad8b5f62e960317b724020feb2303}} 
+\index{Copia@{Copia}!Copia@{Copia}}
+\index{Copia@{Copia}!Copia@{Copia}}
+\doxysubsubsection{\texorpdfstring{Copia()}{Copia()}}
+{\footnotesize\ttfamily Copia\+::\+Copia (\begin{DoxyParamCaption}\item[{int}]{id\+Copia }\end{DoxyParamCaption})}
+
+Construtor da classe \mbox{\hyperlink{classCopia}{Copia}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em id\+Copia} & O ID da cópia. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCopia_a4bdff1c31646ef5cd0954d8c5a702f87}\label{classCopia_a4bdff1c31646ef5cd0954d8c5a702f87}} 
+\index{Copia@{Copia}!````~Copia@{$\sim$Copia}}
+\index{````~Copia@{$\sim$Copia}!Copia@{Copia}}
+\doxysubsubsection{\texorpdfstring{$\sim$Copia()}{~Copia()}}
+{\footnotesize\ttfamily Copia\+::$\sim$\+Copia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destrutor da classe \mbox{\hyperlink{classCopia}{Copia}}. 
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classCopia_a99ad4201abe64a6048e0022a494be35a}\label{classCopia_a99ad4201abe64a6048e0022a494be35a}} 
+\index{Copia@{Copia}!getDataDevolucao@{getDataDevolucao}}
+\index{getDataDevolucao@{getDataDevolucao}!Copia@{Copia}}
+\doxysubsubsection{\texorpdfstring{getDataDevolucao()}{getDataDevolucao()}}
+{\footnotesize\ttfamily std\+::string Copia\+::get\+Data\+Devolucao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Obtém a data de devolução da cópia. \begin{DoxyReturn}{Retorna}
+A data de devolução da cópia. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCopia_a105de68762dd27c1c4198462fdf55d2a}\label{classCopia_a105de68762dd27c1c4198462fdf55d2a}} 
+\index{Copia@{Copia}!getDataEmprestimo@{getDataEmprestimo}}
+\index{getDataEmprestimo@{getDataEmprestimo}!Copia@{Copia}}
+\doxysubsubsection{\texorpdfstring{getDataEmprestimo()}{getDataEmprestimo()}}
+{\footnotesize\ttfamily std\+::string Copia\+::get\+Data\+Emprestimo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Obtém a data de empréstimo da cópia. \begin{DoxyReturn}{Retorna}
+A data de empréstimo da cópia. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCopia_ae9a9612d1781ef64b3236679472ea373}\label{classCopia_ae9a9612d1781ef64b3236679472ea373}} 
+\index{Copia@{Copia}!getDataLimiteReserva@{getDataLimiteReserva}}
+\index{getDataLimiteReserva@{getDataLimiteReserva}!Copia@{Copia}}
+\doxysubsubsection{\texorpdfstring{getDataLimiteReserva()}{getDataLimiteReserva()}}
+{\footnotesize\ttfamily std\+::string Copia\+::get\+Data\+Limite\+Reserva (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Obtém a data limite de duração da reserva para o usuário que reservou a cópia aluga-\/la. \begin{DoxyReturn}{Retorna}
+A data limite de duração da reserva para o usuário que reservou a cópia aluga-\/la. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCopia_ace65d8ec3a560233ad962f8cc8174340}\label{classCopia_ace65d8ec3a560233ad962f8cc8174340}} 
+\index{Copia@{Copia}!getEmprestimo@{getEmprestimo}}
+\index{getEmprestimo@{getEmprestimo}!Copia@{Copia}}
+\doxysubsubsection{\texorpdfstring{getEmprestimo()}{getEmprestimo()}}
+{\footnotesize\ttfamily int Copia\+::get\+Emprestimo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Obtém o ID do usuário que realizou o empréstimo da cópia. \begin{DoxyReturn}{Retorna}
+O ID do usuário que realizou o empréstimo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCopia_a90c50ff43d99199d894730d08b27ede8}\label{classCopia_a90c50ff43d99199d894730d08b27ede8}} 
+\index{Copia@{Copia}!getIdCopia@{getIdCopia}}
+\index{getIdCopia@{getIdCopia}!Copia@{Copia}}
+\doxysubsubsection{\texorpdfstring{getIdCopia()}{getIdCopia()}}
+{\footnotesize\ttfamily int Copia\+::get\+Id\+Copia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Obtém o ID da cópia. \begin{DoxyReturn}{Retorna}
+O ID da cópia. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCopia_a8040b81711c0edfc8b7b83446ec62452}\label{classCopia_a8040b81711c0edfc8b7b83446ec62452}} 
+\index{Copia@{Copia}!getReserva@{getReserva}}
+\index{getReserva@{getReserva}!Copia@{Copia}}
+\doxysubsubsection{\texorpdfstring{getReserva()}{getReserva()}}
+{\footnotesize\ttfamily int Copia\+::get\+Reserva (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Obtém o ID do usuário que realizou a reserva da cópia. \begin{DoxyReturn}{Retorna}
+O ID do usuário que realizou a reserva. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCopia_a1c3c1a26f003688cc967d181e7d8f6da}\label{classCopia_a1c3c1a26f003688cc967d181e7d8f6da}} 
+\index{Copia@{Copia}!informacoes@{informacoes}}
+\index{informacoes@{informacoes}!Copia@{Copia}}
+\doxysubsubsection{\texorpdfstring{informacoes()}{informacoes()}}
+{\footnotesize\ttfamily void Copia\+::informacoes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Mostra informações sobre a cópia. \mbox{\Hypertarget{classCopia_a36f314451319295835cd3477c9cd5fb5}\label{classCopia_a36f314451319295835cd3477c9cd5fb5}} 
+\index{Copia@{Copia}!isDisponivel@{isDisponivel}}
+\index{isDisponivel@{isDisponivel}!Copia@{Copia}}
+\doxysubsubsection{\texorpdfstring{isDisponivel()}{isDisponivel()}}
+{\footnotesize\ttfamily bool Copia\+::is\+Disponivel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Verifica se a cópia está disponível para empréstimo. \begin{DoxyReturn}{Retorna}
+Verdadeiro se a cópia estiver disponível, falso caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCopia_ac59f2c98c174c33a3768a74a19359e53}\label{classCopia_ac59f2c98c174c33a3768a74a19359e53}} 
+\index{Copia@{Copia}!isReservado@{isReservado}}
+\index{isReservado@{isReservado}!Copia@{Copia}}
+\doxysubsubsection{\texorpdfstring{isReservado()}{isReservado()}}
+{\footnotesize\ttfamily bool Copia\+::is\+Reservado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Verifica se a cópia está reservada. \begin{DoxyReturn}{Retorna}
+Verdadeiro se a cópia estiver reservada, falso caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCopia_a6c44c85f19b4fd4dff142e56cf1d9cba}\label{classCopia_a6c44c85f19b4fd4dff142e56cf1d9cba}} 
+\index{Copia@{Copia}!setDataDevolucao@{setDataDevolucao}}
+\index{setDataDevolucao@{setDataDevolucao}!Copia@{Copia}}
+\doxysubsubsection{\texorpdfstring{setDataDevolucao()}{setDataDevolucao()}}
+{\footnotesize\ttfamily void Copia\+::set\+Data\+Devolucao (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data\+Devolucao }\end{DoxyParamCaption})}
+
+Define a data de devolução da cópia. 
+\begin{DoxyParams}{Parâmetros}
+{\em data\+Devolucao} & A data de devolução da cópia. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCopia_a26677eb7fada5336b922cdc0b187362b}\label{classCopia_a26677eb7fada5336b922cdc0b187362b}} 
+\index{Copia@{Copia}!setDataEmprestimo@{setDataEmprestimo}}
+\index{setDataEmprestimo@{setDataEmprestimo}!Copia@{Copia}}
+\doxysubsubsection{\texorpdfstring{setDataEmprestimo()}{setDataEmprestimo()}}
+{\footnotesize\ttfamily void Copia\+::set\+Data\+Emprestimo (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data\+Emprestimo }\end{DoxyParamCaption})}
+
+Define a data de empréstimo da cópia. 
+\begin{DoxyParams}{Parâmetros}
+{\em data\+Emprestimo} & A data de empréstimo da cópia. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCopia_a24853043fdc12a4c7ff771f04117f28b}\label{classCopia_a24853043fdc12a4c7ff771f04117f28b}} 
+\index{Copia@{Copia}!setDataLimiteReserva@{setDataLimiteReserva}}
+\index{setDataLimiteReserva@{setDataLimiteReserva}!Copia@{Copia}}
+\doxysubsubsection{\texorpdfstring{setDataLimiteReserva()}{setDataLimiteReserva()}}
+{\footnotesize\ttfamily void Copia\+::set\+Data\+Limite\+Reserva (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data\+Limite\+Reserva }\end{DoxyParamCaption})}
+
+Define A data limite de duração da reserva para o usuário que reservou a cópia aluga-\/la. 
+\begin{DoxyParams}{Parâmetros}
+{\em data\+Limite\+Reserva} & A data limite de duração da reserva para o usuário que reservou a cópia aluga-\/la. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCopia_a442e89253ec3b8a59b38ba11a24e070a}\label{classCopia_a442e89253ec3b8a59b38ba11a24e070a}} 
+\index{Copia@{Copia}!setEmprestimo@{setEmprestimo}}
+\index{setEmprestimo@{setEmprestimo}!Copia@{Copia}}
+\doxysubsubsection{\texorpdfstring{setEmprestimo()}{setEmprestimo()}}
+{\footnotesize\ttfamily void Copia\+::set\+Emprestimo (\begin{DoxyParamCaption}\item[{int}]{emprestimo }\end{DoxyParamCaption})}
+
+Define o ID do usuário que realizou o empréstimo da cópia. 
+\begin{DoxyParams}{Parâmetros}
+{\em emprestimo} & O ID do usuário que realizou o empréstimo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCopia_a5dab01503866b2c1b2b1e799dd717023}\label{classCopia_a5dab01503866b2c1b2b1e799dd717023}} 
+\index{Copia@{Copia}!setReserva@{setReserva}}
+\index{setReserva@{setReserva}!Copia@{Copia}}
+\doxysubsubsection{\texorpdfstring{setReserva()}{setReserva()}}
+{\footnotesize\ttfamily void Copia\+::set\+Reserva (\begin{DoxyParamCaption}\item[{int}]{reserva }\end{DoxyParamCaption})}
+
+Define o ID do usuário que realizou a reserva da cópia. 
+\begin{DoxyParams}{Parâmetros}
+{\em reserva} & O ID do usuário que realizou a reserva. \\
+\hline
+\end{DoxyParams}
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/livro/Copia.\+hpp\item 
+src/livro/Copia.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,135 @@
+\hypertarget{classAluno}{}\doxysection{Referência da Classe Aluno}
+\label{classAluno}\index{Aluno@{Aluno}}
+
+
+Classe que representa um aluno, derivada da classe \mbox{\hyperlink{classCliente}{Cliente}}.  
+
+
+
+
+{\ttfamily \#include $<$Aluno.\+hpp$>$}
+
+
+
+Diagrama de hierarquia para Aluno\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=131pt]{db/d98/classAluno__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboração para Aluno\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{d3/d27/classAluno__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAluno_a43569136d3beedfd0ec43a91b52ae152}{Aluno}} (const std\+::string \&nome, const std\+::string \&data\+Ingresso, const std\+::string \&matricula, const std\+::string \&curso, int senha=-\/1)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classAluno}{Aluno}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAluno_a025dacba35428c0ed4e1bdde2eba759a}\label{classAluno_a025dacba35428c0ed4e1bdde2eba759a}} 
+\mbox{\hyperlink{classAluno_a025dacba35428c0ed4e1bdde2eba759a}{$\sim$\+Aluno}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{classAluno}{Aluno}}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAluno_a0212a7f71e49646be94c1f8fe3a146f8}{get\+Matricula}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a matrícula do aluno. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAluno_a4abf64fdbf1ee5550bf3e7fca10455be}{get\+Curso}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o curso do aluno. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAluno_a7abaab4b7a842be281d6590baf06cc6b}\label{classAluno_a7abaab4b7a842be281d6590baf06cc6b}} 
+void \mbox{\hyperlink{classAluno_a7abaab4b7a842be281d6590baf06cc6b}{pagar\+Multa}} ()
+\begin{DoxyCompactList}\small\item\em Realiza o pagamento de uma multa do aluno. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAluno_a54d49ed9bb9c1061ff2f16f6157d6b0d}{get\+Tipo\+Usuario}} () const override
+\begin{DoxyCompactList}\small\item\em Obtém o tipo de usuário da pessoa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Outros membros herdados}
+
+
+\doxysubsection{Descrição detalhada}
+Classe que representa um aluno, derivada da classe \mbox{\hyperlink{classCliente}{Cliente}}. 
+
+Um aluno é uma pessoa que possui informações pessoais, como nome, data de ingresso, matrícula e curso. Além disso, um aluno também herda as funcionalidades de um cliente, podendo buscar livros, alugar e reservar. 
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{classAluno_a43569136d3beedfd0ec43a91b52ae152}\label{classAluno_a43569136d3beedfd0ec43a91b52ae152}} 
+\index{Aluno@{Aluno}!Aluno@{Aluno}}
+\index{Aluno@{Aluno}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{Aluno()}{Aluno()}}
+{\footnotesize\ttfamily Aluno\+::\+Aluno (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome,  }\item[{const std\+::string \&}]{data\+Ingresso,  }\item[{const std\+::string \&}]{matricula,  }\item[{const std\+::string \&}]{curso,  }\item[{int}]{senha = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classAluno}{Aluno}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & O nome do aluno. \\
+\hline
+{\em data\+Ingresso} & A data de ingresso do aluno. \\
+\hline
+{\em matricula} & A matrícula do aluno. \\
+\hline
+{\em curso} & O curso do aluno. \\
+\hline
+{\em senha} & A senha do aluno (opcional, aleatorizada caso padrão). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classAluno_a4abf64fdbf1ee5550bf3e7fca10455be}\label{classAluno_a4abf64fdbf1ee5550bf3e7fca10455be}} 
+\index{Aluno@{Aluno}!getCurso@{getCurso}}
+\index{getCurso@{getCurso}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{getCurso()}{getCurso()}}
+{\footnotesize\ttfamily std\+::string Aluno\+::get\+Curso (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o curso do aluno. 
+
+\begin{DoxyReturn}{Retorna}
+O curso do aluno. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAluno_a0212a7f71e49646be94c1f8fe3a146f8}\label{classAluno_a0212a7f71e49646be94c1f8fe3a146f8}} 
+\index{Aluno@{Aluno}!getMatricula@{getMatricula}}
+\index{getMatricula@{getMatricula}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{getMatricula()}{getMatricula()}}
+{\footnotesize\ttfamily std\+::string Aluno\+::get\+Matricula (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém a matrícula do aluno. 
+
+\begin{DoxyReturn}{Retorna}
+A matrícula do aluno. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAluno_a54d49ed9bb9c1061ff2f16f6157d6b0d}\label{classAluno_a54d49ed9bb9c1061ff2f16f6157d6b0d}} 
+\index{Aluno@{Aluno}!getTipoUsuario@{getTipoUsuario}}
+\index{getTipoUsuario@{getTipoUsuario}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{getTipoUsuario()}{getTipoUsuario()}}
+{\footnotesize\ttfamily std\+::string Aluno\+::get\+Tipo\+Usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtém o tipo de usuário da pessoa. 
+
+\begin{DoxyReturn}{Retorna}
+O tipo de usuário da pessoa.
+\end{DoxyReturn}
+\begin{DoxyNote}{Observação}
+Torna a classe concreta. 
+\end{DoxyNote}
+
+
+Implementa \mbox{\hyperlink{classPessoa_aa6e8485c49eab468a67f87cd3e1d0a37}{Pessoa}}.
+
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/pessoa/Aluno.\+hpp\item 
+src/pessoa/Aluno.\+cpp\end{DoxyCompactItemize}

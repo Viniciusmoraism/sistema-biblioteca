@@ -1,0 +1,118 @@
+\hypertarget{classProfessor}{}\doxysection{Referência da Classe Professor}
+\label{classProfessor}\index{Professor@{Professor}}
+
+
+Classe que representa um professor, derivada da classe \mbox{\hyperlink{classCliente}{Cliente}}.  
+
+
+
+
+{\ttfamily \#include $<$Professor.\+hpp$>$}
+
+
+
+Diagrama de hierarquia para Professor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{df/da8/classProfessor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboração para Professor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{d5/dbb/classProfessor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classProfessor_a8d54a57dfc5be133a8755cebec34233e}{Professor}} (const std\+::string \&nome, const std\+::string \&data\+Ingresso, const std\+::string \&departamento, int senha=-\/1)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classProfessor}{Professor}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classProfessor_afc11ab966c1f1231a6cd92d7304cce50}\label{classProfessor_afc11ab966c1f1231a6cd92d7304cce50}} 
+\mbox{\hyperlink{classProfessor_afc11ab966c1f1231a6cd92d7304cce50}{$\sim$\+Professor}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{classProfessor}{Professor}}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classProfessor_af347e8cee12ba86946247fd5aa4f5ff8}{get\+Departamento}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o departamento do professor. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classProfessor_ab52f43ba58955846496ffd79a2ec2c12}{get\+Tipo\+Usuario}} () const override
+\begin{DoxyCompactList}\small\item\em Obtém o tipo de usuário da pessoa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classProfessor_a09a5fe5b88a9c4ffa9a380705f6e868f}\label{classProfessor_a09a5fe5b88a9c4ffa9a380705f6e868f}} 
+void \mbox{\hyperlink{classProfessor_a09a5fe5b88a9c4ffa9a380705f6e868f}{pagar\+Multa}} ()
+\begin{DoxyCompactList}\small\item\em Realiza o pagamento de uma multa do professor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Outros membros herdados}
+
+
+\doxysubsection{Descrição detalhada}
+Classe que representa um professor, derivada da classe \mbox{\hyperlink{classCliente}{Cliente}}. 
+
+Um professor é uma pessoa que possui informações pessoais, como nome, data de ingresso e departamento. Além disso, um professor também herda as funcionalidades de um cliente, podendo buscar livros, alugar e reservar. 
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{classProfessor_a8d54a57dfc5be133a8755cebec34233e}\label{classProfessor_a8d54a57dfc5be133a8755cebec34233e}} 
+\index{Professor@{Professor}!Professor@{Professor}}
+\index{Professor@{Professor}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{Professor()}{Professor()}}
+{\footnotesize\ttfamily Professor\+::\+Professor (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome,  }\item[{const std\+::string \&}]{data\+Ingresso,  }\item[{const std\+::string \&}]{departamento,  }\item[{int}]{senha = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classProfessor}{Professor}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & O nome do professor. \\
+\hline
+{\em data\+Ingresso} & A data de ingresso do professor. \\
+\hline
+{\em departamento} & O departamento do professor. \\
+\hline
+{\em senha} & A senha do professor (opcional). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classProfessor_af347e8cee12ba86946247fd5aa4f5ff8}\label{classProfessor_af347e8cee12ba86946247fd5aa4f5ff8}} 
+\index{Professor@{Professor}!getDepartamento@{getDepartamento}}
+\index{getDepartamento@{getDepartamento}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{getDepartamento()}{getDepartamento()}}
+{\footnotesize\ttfamily std\+::string Professor\+::get\+Departamento (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o departamento do professor. 
+
+\begin{DoxyReturn}{Retorna}
+O departamento do professor. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classProfessor_ab52f43ba58955846496ffd79a2ec2c12}\label{classProfessor_ab52f43ba58955846496ffd79a2ec2c12}} 
+\index{Professor@{Professor}!getTipoUsuario@{getTipoUsuario}}
+\index{getTipoUsuario@{getTipoUsuario}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{getTipoUsuario()}{getTipoUsuario()}}
+{\footnotesize\ttfamily std\+::string Professor\+::get\+Tipo\+Usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtém o tipo de usuário da pessoa. 
+
+\begin{DoxyReturn}{Retorna}
+O tipo de usuário da pessoa.
+\end{DoxyReturn}
+\begin{DoxyNote}{Observação}
+Torna a classe concreta. 
+\end{DoxyNote}
+
+
+Implementa \mbox{\hyperlink{classPessoa_aa6e8485c49eab468a67f87cd3e1d0a37}{Pessoa}}.
+
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/pessoa/Professor.\+hpp\item 
+src/pessoa/Professor.\+cpp\end{DoxyCompactItemize}

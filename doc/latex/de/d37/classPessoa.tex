@@ -1,0 +1,309 @@
+\hypertarget{classPessoa}{}\doxysection{Referência da Classe Pessoa}
+\label{classPessoa}\index{Pessoa@{Pessoa}}
+
+
+Classe abstrata que representa uma \mbox{\hyperlink{classPessoa}{Pessoa}}.  
+
+
+
+
+{\ttfamily \#include $<$Pessoa.\+hpp$>$}
+
+
+
+Diagrama de hierarquia para Pessoa\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{d3/d06/classPessoa__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPessoa_ab82afb04955debcb61edb46005e8fec2}{Pessoa}} (const std\+::string \&nome, const std\+::string \&data\+Ingresso, int senha=-\/1)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classPessoa}{Pessoa}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPessoa_a1501b01d184497075fe5ce042da3ae44}\label{classPessoa_a1501b01d184497075fe5ce042da3ae44}} 
+\mbox{\hyperlink{classPessoa_a1501b01d184497075fe5ce042da3ae44}{$\sim$\+Pessoa}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPessoa_a814194eaccf92760c5c044590f40caee}{get\+Id\+User}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o ID do usuário. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPessoa_a309bd1dada952c5c9b6aa27c163d1e53}{get\+Nome}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o nome da pessoa. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPessoa_a9a0d6f89bdad8670bff86f2e160dcb2e}{get\+Data\+Ingresso}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a data de ingresso da pessoa. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPessoa_aaf9f218bdba7422640c43e9018152c73}{get\+Senha}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a senha da pessoa. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classPessoa_aa6e8485c49eab468a67f87cd3e1d0a37}{get\+Tipo\+Usuario}} () const =0
+\begin{DoxyCompactList}\small\item\em Obtém o tipo de usuário da pessoa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPessoa_a988c52d92e546f997ae8274793ab5be6}{set\+Nome}} (const std\+::string \&novo\+Nome)
+\begin{DoxyCompactList}\small\item\em Define o nome da pessoa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPessoa_a10a128064d0ffc5abc1cb0feccab765b}{set\+Senha}} (int nova\+Senha)
+\begin{DoxyCompactList}\small\item\em Define a senha da pessoa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPessoa_a022ff90c1f7d1d55cdcbdeffdb91fe17}{consultar\+Lista\+Livros}} (std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&acervo)
+\begin{DoxyCompactList}\small\item\em Consulta a lista de todos os livros do acervo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPessoa_a754723f513f7706fe88038435fd67017}{buscar\+Livro}} (const std\+::string \&trecho, const std\+::string \&campo, std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&acervo)
+\begin{DoxyCompactList}\small\item\em Busca livros no acervo com base em um trecho e campo específicos e os exibe na tela. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPessoa_aad239876e0ddc981ff31b90d3be24dd0}{exibir\+Livro}} (const int id\+Livro, std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&acervo)
+\begin{DoxyCompactList}\small\item\em Exibe detalhes de um livro e o status de suas cópias. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membros Públicos Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classPessoa_a6699a108d29ebc18cb06c10f3a44c330}{get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Obtém o ID global da pessoa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membros Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classPessoa_a75465f0195b8572c11ea52a24d661372}{encontrar\+Info\+Livro}} (const \mbox{\hyperlink{classInfoLivro}{Info\+Livro}} \&livro, std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&acervo) const
+\begin{DoxyCompactList}\small\item\em Encontra um livro no acervo com base nas informações do livro. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPessoa_aaecda684361b20627590c2446f1a9dc2}{encontrar\+Livro}} (const int id\+Livro, std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&acervo) const
+\begin{DoxyCompactList}\small\item\em Encontra um livro no acervo com base no ID do livro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPessoa_a26392e3d63f6b6cb3f72d1ce0a2effe5}\label{classPessoa_a26392e3d63f6b6cb3f72d1ce0a2effe5}} 
+std\+::string {\bfseries \+\_\+tipo\+Usuario}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe abstrata que representa uma \mbox{\hyperlink{classPessoa}{Pessoa}}. 
+
+A classe \mbox{\hyperlink{classPessoa}{Pessoa}} é uma classe abstrata que serve como base para as classes derivadas que representam diferentes tipos de usuários do sistema. 
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{classPessoa_ab82afb04955debcb61edb46005e8fec2}\label{classPessoa_ab82afb04955debcb61edb46005e8fec2}} 
+\index{Pessoa@{Pessoa}!Pessoa@{Pessoa}}
+\index{Pessoa@{Pessoa}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{Pessoa()}{Pessoa()}}
+{\footnotesize\ttfamily Pessoa\+::\+Pessoa (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome,  }\item[{const std\+::string \&}]{data\+Ingresso,  }\item[{int}]{senha = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classPessoa}{Pessoa}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & O nome da pessoa. \\
+\hline
+{\em data\+Ingresso} & A data de ingresso da pessoa. \\
+\hline
+{\em senha} & A senha da pessoa. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classPessoa_a754723f513f7706fe88038435fd67017}\label{classPessoa_a754723f513f7706fe88038435fd67017}} 
+\index{Pessoa@{Pessoa}!buscarLivro@{buscarLivro}}
+\index{buscarLivro@{buscarLivro}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{buscarLivro()}{buscarLivro()}}
+{\footnotesize\ttfamily void Pessoa\+::buscar\+Livro (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{trecho,  }\item[{const std\+::string \&}]{campo,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&}]{acervo }\end{DoxyParamCaption})}
+
+
+
+Busca livros no acervo com base em um trecho e campo específicos e os exibe na tela. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em trecho} & O trecho a ser buscado. \\
+\hline
+{\em campo} & O campo em que o trecho será buscado. \\
+\hline
+{\em acervo} & O vetor de livros do acervo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPessoa_a022ff90c1f7d1d55cdcbdeffdb91fe17}\label{classPessoa_a022ff90c1f7d1d55cdcbdeffdb91fe17}} 
+\index{Pessoa@{Pessoa}!consultarListaLivros@{consultarListaLivros}}
+\index{consultarListaLivros@{consultarListaLivros}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{consultarListaLivros()}{consultarListaLivros()}}
+{\footnotesize\ttfamily void Pessoa\+::consultar\+Lista\+Livros (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&}]{acervo }\end{DoxyParamCaption})}
+
+
+
+Consulta a lista de todos os livros do acervo. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em acervo} & O vetor de livros representando o acervo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPessoa_a75465f0195b8572c11ea52a24d661372}\label{classPessoa_a75465f0195b8572c11ea52a24d661372}} 
+\index{Pessoa@{Pessoa}!encontrarInfoLivro@{encontrarInfoLivro}}
+\index{encontrarInfoLivro@{encontrarInfoLivro}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{encontrarInfoLivro()}{encontrarInfoLivro()}}
+{\footnotesize\ttfamily int Pessoa\+::encontrar\+Info\+Livro (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classInfoLivro}{Info\+Livro}} \&}]{livro,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&}]{acervo }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Encontra um livro no acervo com base nas informações do livro. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em livro} & As informações do livro a ser encontrado. \\
+\hline
+{\em acervo} & O vetor de livros do acervo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+O índice do livro encontrado no acervo, ou -\/1 caso não seja encontrado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPessoa_aaecda684361b20627590c2446f1a9dc2}\label{classPessoa_aaecda684361b20627590c2446f1a9dc2}} 
+\index{Pessoa@{Pessoa}!encontrarLivro@{encontrarLivro}}
+\index{encontrarLivro@{encontrarLivro}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{encontrarLivro()}{encontrarLivro()}}
+{\footnotesize\ttfamily int Pessoa\+::encontrar\+Livro (\begin{DoxyParamCaption}\item[{const int}]{id\+Livro,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&}]{acervo }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Encontra um livro no acervo com base no ID do livro. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id\+Livro} & O ID do livro a ser encontrado. \\
+\hline
+{\em acervo} & O vetor de livros do acervo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+O índice do livro encontrado no acervo, ou -\/1 caso não seja encontrado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPessoa_aad239876e0ddc981ff31b90d3be24dd0}\label{classPessoa_aad239876e0ddc981ff31b90d3be24dd0}} 
+\index{Pessoa@{Pessoa}!exibirLivro@{exibirLivro}}
+\index{exibirLivro@{exibirLivro}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{exibirLivro()}{exibirLivro()}}
+{\footnotesize\ttfamily void Pessoa\+::exibir\+Livro (\begin{DoxyParamCaption}\item[{const int}]{id\+Livro,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&}]{acervo }\end{DoxyParamCaption})}
+
+
+
+Exibe detalhes de um livro e o status de suas cópias. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id\+Livro} & O ID do livro a ser exibido. \\
+\hline
+{\em acervo} & O vetor de livros do acervo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPessoa_a9a0d6f89bdad8670bff86f2e160dcb2e}\label{classPessoa_a9a0d6f89bdad8670bff86f2e160dcb2e}} 
+\index{Pessoa@{Pessoa}!getDataIngresso@{getDataIngresso}}
+\index{getDataIngresso@{getDataIngresso}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{getDataIngresso()}{getDataIngresso()}}
+{\footnotesize\ttfamily std\+::string Pessoa\+::get\+Data\+Ingresso (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém a data de ingresso da pessoa. 
+
+\begin{DoxyReturn}{Retorna}
+A data de ingresso da pessoa. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPessoa_a6699a108d29ebc18cb06c10f3a44c330}\label{classPessoa_a6699a108d29ebc18cb06c10f3a44c330}} 
+\index{Pessoa@{Pessoa}!getId@{getId}}
+\index{getId@{getId}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Pessoa\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtém o ID global da pessoa. 
+
+\begin{DoxyReturn}{Retorna}
+O ID global da pessoa. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPessoa_a814194eaccf92760c5c044590f40caee}\label{classPessoa_a814194eaccf92760c5c044590f40caee}} 
+\index{Pessoa@{Pessoa}!getIdUser@{getIdUser}}
+\index{getIdUser@{getIdUser}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{getIdUser()}{getIdUser()}}
+{\footnotesize\ttfamily int Pessoa\+::get\+Id\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o ID do usuário. 
+
+\begin{DoxyReturn}{Retorna}
+O ID do usuário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPessoa_a309bd1dada952c5c9b6aa27c163d1e53}\label{classPessoa_a309bd1dada952c5c9b6aa27c163d1e53}} 
+\index{Pessoa@{Pessoa}!getNome@{getNome}}
+\index{getNome@{getNome}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily std\+::string Pessoa\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o nome da pessoa. 
+
+\begin{DoxyReturn}{Retorna}
+O nome da pessoa. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPessoa_aaf9f218bdba7422640c43e9018152c73}\label{classPessoa_aaf9f218bdba7422640c43e9018152c73}} 
+\index{Pessoa@{Pessoa}!getSenha@{getSenha}}
+\index{getSenha@{getSenha}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{getSenha()}{getSenha()}}
+{\footnotesize\ttfamily int Pessoa\+::get\+Senha (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém a senha da pessoa. 
+
+\begin{DoxyReturn}{Retorna}
+A senha da pessoa. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPessoa_aa6e8485c49eab468a67f87cd3e1d0a37}\label{classPessoa_aa6e8485c49eab468a67f87cd3e1d0a37}} 
+\index{Pessoa@{Pessoa}!getTipoUsuario@{getTipoUsuario}}
+\index{getTipoUsuario@{getTipoUsuario}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{getTipoUsuario()}{getTipoUsuario()}}
+{\footnotesize\ttfamily virtual std\+::string Pessoa\+::get\+Tipo\+Usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Obtém o tipo de usuário da pessoa. 
+
+\begin{DoxyReturn}{Retorna}
+O tipo de usuário da pessoa.
+\end{DoxyReturn}
+\begin{DoxyNote}{Observação}
+Este é um método virtual puro que precisa ser implementado pelas classes derivadas. 
+\end{DoxyNote}
+
+
+Implementado por \mbox{\hyperlink{classSecretario_ab49fd9b13fe537f538280c87614df1c9}{Secretario}}, \mbox{\hyperlink{classProfessor_ab52f43ba58955846496ffd79a2ec2c12}{Professor}} e \mbox{\hyperlink{classAluno_a54d49ed9bb9c1061ff2f16f6157d6b0d}{Aluno}}.
+
+\mbox{\Hypertarget{classPessoa_a988c52d92e546f997ae8274793ab5be6}\label{classPessoa_a988c52d92e546f997ae8274793ab5be6}} 
+\index{Pessoa@{Pessoa}!setNome@{setNome}}
+\index{setNome@{setNome}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily void Pessoa\+::set\+Nome (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{novo\+Nome }\end{DoxyParamCaption})}
+
+
+
+Define o nome da pessoa. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em novo\+Nome} & O novo nome da pessoa. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPessoa_a10a128064d0ffc5abc1cb0feccab765b}\label{classPessoa_a10a128064d0ffc5abc1cb0feccab765b}} 
+\index{Pessoa@{Pessoa}!setSenha@{setSenha}}
+\index{setSenha@{setSenha}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{setSenha()}{setSenha()}}
+{\footnotesize\ttfamily void Pessoa\+::set\+Senha (\begin{DoxyParamCaption}\item[{int}]{nova\+Senha }\end{DoxyParamCaption})}
+
+
+
+Define a senha da pessoa. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nova\+Senha} & A nova senha da pessoa. \\
+\hline
+\end{DoxyParams}
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/pessoa/Pessoa.\+hpp\item 
+src/pessoa/Pessoa.\+cpp\end{DoxyCompactItemize}

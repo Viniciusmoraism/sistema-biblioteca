@@ -1,0 +1,116 @@
+\hypertarget{classBibliotecario}{}\doxysection{Referência da Classe Bibliotecario}
+\label{classBibliotecario}\index{Bibliotecario@{Bibliotecario}}
+
+
+Classe que representa um bibliotecário, derivada da classe \mbox{\hyperlink{classSecretario}{Secretario}}.  
+
+
+
+
+{\ttfamily \#include $<$Bibliotecario.\+hpp$>$}
+
+
+
+Diagrama de hierarquia para Bibliotecario\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{d2/d8f/classBibliotecario__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboração para Bibliotecario\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{df/d8e/classBibliotecario__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBibliotecario_a1aea10cc33a2c559d3523a3fe61fc681}{Bibliotecario}} (const std\+::string \&nome, const std\+::string \&data\+Ingresso, int senha=-\/1)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classBibliotecario}{Bibliotecario}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBibliotecario_af5a602dd10ed35e7fe237f3010ae3b79}\label{classBibliotecario_af5a602dd10ed35e7fe237f3010ae3b79}} 
+\mbox{\hyperlink{classBibliotecario_af5a602dd10ed35e7fe237f3010ae3b79}{$\sim$\+Bibliotecario}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{classBibliotecario}{Bibliotecario}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBibliotecario_af1d0aa77f1f4ca4a7db3e47c67227556}{cadastrar\+Livro}} (const \mbox{\hyperlink{classInfoLivro}{Info\+Livro}} \&livro, std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&acervo)
+\begin{DoxyCompactList}\small\item\em Cadastra um livro no acervo da biblioteca. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBibliotecario_a1f4fad1846d5d8a3794d5b18f9bad495}{remover\+Livro}} (int id\+Livro, int id\+Copia, std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&acervo)
+\begin{DoxyCompactList}\small\item\em Remove um livro do acervo da biblioteca. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Outros membros herdados}
+
+
+\doxysubsection{Descrição detalhada}
+Classe que representa um bibliotecário, derivada da classe \mbox{\hyperlink{classSecretario}{Secretario}}. 
+
+Um bibliotecário é um funcionário da biblioteca que possui as mesmas responsabilidades de um secretário, mas também possui tarefas adicionais relacionadas à administração do acervo de livros da biblioteca. Ele pode cadastrar novos livros no acervo e remover livros existentes do acervo. 
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{classBibliotecario_a1aea10cc33a2c559d3523a3fe61fc681}\label{classBibliotecario_a1aea10cc33a2c559d3523a3fe61fc681}} 
+\index{Bibliotecario@{Bibliotecario}!Bibliotecario@{Bibliotecario}}
+\index{Bibliotecario@{Bibliotecario}!Bibliotecario@{Bibliotecario}}
+\doxysubsubsection{\texorpdfstring{Bibliotecario()}{Bibliotecario()}}
+{\footnotesize\ttfamily Bibliotecario\+::\+Bibliotecario (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome,  }\item[{const std\+::string \&}]{data\+Ingresso,  }\item[{int}]{senha = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classBibliotecario}{Bibliotecario}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & O nome do bibliotecário. \\
+\hline
+{\em data\+Ingresso} & A data de ingresso do bibliotecário. \\
+\hline
+{\em senha} & A senha do bibliotecário (opcional). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classBibliotecario_af1d0aa77f1f4ca4a7db3e47c67227556}\label{classBibliotecario_af1d0aa77f1f4ca4a7db3e47c67227556}} 
+\index{Bibliotecario@{Bibliotecario}!cadastrarLivro@{cadastrarLivro}}
+\index{cadastrarLivro@{cadastrarLivro}!Bibliotecario@{Bibliotecario}}
+\doxysubsubsection{\texorpdfstring{cadastrarLivro()}{cadastrarLivro()}}
+{\footnotesize\ttfamily void Bibliotecario\+::cadastrar\+Livro (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classInfoLivro}{Info\+Livro}} \&}]{livro,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&}]{acervo }\end{DoxyParamCaption})}
+
+
+
+Cadastra um livro no acervo da biblioteca. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em livro} & As informações do livro a ser cadastrado. \\
+\hline
+{\em acervo} & O vetor de livros onde o livro será cadastrado. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBibliotecario_a1f4fad1846d5d8a3794d5b18f9bad495}\label{classBibliotecario_a1f4fad1846d5d8a3794d5b18f9bad495}} 
+\index{Bibliotecario@{Bibliotecario}!removerLivro@{removerLivro}}
+\index{removerLivro@{removerLivro}!Bibliotecario@{Bibliotecario}}
+\doxysubsubsection{\texorpdfstring{removerLivro()}{removerLivro()}}
+{\footnotesize\ttfamily void Bibliotecario\+::remover\+Livro (\begin{DoxyParamCaption}\item[{int}]{id\+Livro,  }\item[{int}]{id\+Copia,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&}]{acervo }\end{DoxyParamCaption})}
+
+
+
+Remove um livro do acervo da biblioteca. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id\+Livro} & O ID do livro a ser removido. \\
+\hline
+{\em id\+Copia} & O ID da cópia do livro a ser removida. \\
+\hline
+{\em acervo} & O vetor de livros onde o livro será removido. \\
+\hline
+\end{DoxyParams}
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/pessoa/Bibliotecario.\+hpp\item 
+src/pessoa/Bibliotecario.\+cpp\end{DoxyCompactItemize}

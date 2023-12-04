@@ -1,0 +1,147 @@
+\hypertarget{classAluguel}{}\doxysection{Referência da Classe Aluguel}
+\label{classAluguel}\index{Aluguel@{Aluguel}}
+
+
+Classe que representa um aluguel de um livro.  
+
+
+
+
+{\ttfamily \#include $<$Aluguel.\+hpp$>$}
+
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAluguel_aa1708594ace7aabaecfafa82c9a34dab}\label{classAluguel_aa1708594ace7aabaecfafa82c9a34dab}} 
+\mbox{\hyperlink{classAluguel_aa1708594ace7aabaecfafa82c9a34dab}{Aluguel}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classAluguel}{Aluguel}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAluguel_a408c95c8d08704ccab986081294c20e7}{get\+Id\+Livro}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o ID do livro associado ao aluguel. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAluguel_a797f83beb3204d81a5d770d8fed1a3f2}{get\+Id\+Copia}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o ID da cópia do livro associada ao aluguel. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAluguel_ab4dafa370e87adcd739b7ad1a31c10a3}{get\+Renovacoes}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o número de renovações realizadas para o aluguel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAluguel_a49b0b2e7f248ae748ac8ff0ee75fbab9}{set\+Id\+Livro}} (int id)
+\begin{DoxyCompactList}\small\item\em Define o ID do livro associado ao aluguel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAluguel_adb4921d182c2d50135fee08d3f06be6b}{set\+Id\+Copia}} (int id)
+\begin{DoxyCompactList}\small\item\em Define o ID da cópia do livro associada ao aluguel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAluguel_a267f76caa3e6048b81c8adb6d61ba31d}{set\+Renovacoes}} (int num\+Renovacoes)
+\begin{DoxyCompactList}\small\item\em Define o número de renovações realizadas para o aluguel. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classAluguel_ada4094f59a7cb2ae70d05d5302ad27d3}{operator==}} (const \mbox{\hyperlink{classAluguel}{Aluguel}} \&outro) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador de igualdade para comparar dois aluguéis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe que representa um aluguel de um livro. 
+
+Um aluguel é associado a um livro e uma cópia específica do livro, e mantém o número de renovações que foram feitas para o aluguel. 
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classAluguel_a797f83beb3204d81a5d770d8fed1a3f2}\label{classAluguel_a797f83beb3204d81a5d770d8fed1a3f2}} 
+\index{Aluguel@{Aluguel}!getIdCopia@{getIdCopia}}
+\index{getIdCopia@{getIdCopia}!Aluguel@{Aluguel}}
+\doxysubsubsection{\texorpdfstring{getIdCopia()}{getIdCopia()}}
+{\footnotesize\ttfamily int Aluguel\+::get\+Id\+Copia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o ID da cópia do livro associada ao aluguel. 
+
+\begin{DoxyReturn}{Retorna}
+O ID da cópia do livro. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAluguel_a408c95c8d08704ccab986081294c20e7}\label{classAluguel_a408c95c8d08704ccab986081294c20e7}} 
+\index{Aluguel@{Aluguel}!getIdLivro@{getIdLivro}}
+\index{getIdLivro@{getIdLivro}!Aluguel@{Aluguel}}
+\doxysubsubsection{\texorpdfstring{getIdLivro()}{getIdLivro()}}
+{\footnotesize\ttfamily int Aluguel\+::get\+Id\+Livro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o ID do livro associado ao aluguel. 
+
+\begin{DoxyReturn}{Retorna}
+O ID do livro. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAluguel_ab4dafa370e87adcd739b7ad1a31c10a3}\label{classAluguel_ab4dafa370e87adcd739b7ad1a31c10a3}} 
+\index{Aluguel@{Aluguel}!getRenovacoes@{getRenovacoes}}
+\index{getRenovacoes@{getRenovacoes}!Aluguel@{Aluguel}}
+\doxysubsubsection{\texorpdfstring{getRenovacoes()}{getRenovacoes()}}
+{\footnotesize\ttfamily int Aluguel\+::get\+Renovacoes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o número de renovações realizadas para o aluguel. 
+
+\begin{DoxyReturn}{Retorna}
+O número de renovações. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAluguel_ada4094f59a7cb2ae70d05d5302ad27d3}\label{classAluguel_ada4094f59a7cb2ae70d05d5302ad27d3}} 
+\index{Aluguel@{Aluguel}!operator==@{operator==}}
+\index{operator==@{operator==}!Aluguel@{Aluguel}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Aluguel\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAluguel}{Aluguel}} \&}]{outro }\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga do operador de igualdade para comparar dois aluguéis. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em outro} & O outro aluguel a ser comparado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se os aluguéis forem iguais, false caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAluguel_adb4921d182c2d50135fee08d3f06be6b}\label{classAluguel_adb4921d182c2d50135fee08d3f06be6b}} 
+\index{Aluguel@{Aluguel}!setIdCopia@{setIdCopia}}
+\index{setIdCopia@{setIdCopia}!Aluguel@{Aluguel}}
+\doxysubsubsection{\texorpdfstring{setIdCopia()}{setIdCopia()}}
+{\footnotesize\ttfamily void Aluguel\+::set\+Id\+Copia (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Define o ID da cópia do livro associada ao aluguel. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & O ID da cópia do livro. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAluguel_a49b0b2e7f248ae748ac8ff0ee75fbab9}\label{classAluguel_a49b0b2e7f248ae748ac8ff0ee75fbab9}} 
+\index{Aluguel@{Aluguel}!setIdLivro@{setIdLivro}}
+\index{setIdLivro@{setIdLivro}!Aluguel@{Aluguel}}
+\doxysubsubsection{\texorpdfstring{setIdLivro()}{setIdLivro()}}
+{\footnotesize\ttfamily void Aluguel\+::set\+Id\+Livro (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Define o ID do livro associado ao aluguel. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & O ID do livro. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAluguel_a267f76caa3e6048b81c8adb6d61ba31d}\label{classAluguel_a267f76caa3e6048b81c8adb6d61ba31d}} 
+\index{Aluguel@{Aluguel}!setRenovacoes@{setRenovacoes}}
+\index{setRenovacoes@{setRenovacoes}!Aluguel@{Aluguel}}
+\doxysubsubsection{\texorpdfstring{setRenovacoes()}{setRenovacoes()}}
+{\footnotesize\ttfamily void Aluguel\+::set\+Renovacoes (\begin{DoxyParamCaption}\item[{int}]{num\+Renovacoes }\end{DoxyParamCaption})}
+
+
+
+Define o número de renovações realizadas para o aluguel. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em num\+Renovacoes} & O número de renovações. \\
+\hline
+\end{DoxyParams}
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/pessoa/Aluguel.\+hpp\item 
+src/pessoa/Aluguel.\+cpp\end{DoxyCompactItemize}

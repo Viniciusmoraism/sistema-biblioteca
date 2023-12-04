@@ -1,0 +1,368 @@
+\hypertarget{classLivro}{}\doxysection{Referência da Classe Livro}
+\label{classLivro}\index{Livro@{Livro}}
+
+
+{\ttfamily \#include $<$Livro.\+hpp$>$}
+
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLivro_ad30410b2c31f99ce6cbf30285f36d546}{Livro}} (const \mbox{\hyperlink{classInfoLivro}{Info\+Livro}} \&info\+Livro)
+\item 
+\mbox{\hyperlink{classLivro_a1f3b49a5fbaf89727b0d0317e128655f}{$\sim$\+Livro}} ()
+\item 
+int \mbox{\hyperlink{classLivro_aba6bda6acfe276f93baed230c0b3fbdc}{get\+Total\+Disponiveis}} () const
+\item 
+int \mbox{\hyperlink{classLivro_a38ff758b94a675a9ca671738a7d2b1de}{get\+Total\+Reservados}} ()
+\item 
+int \mbox{\hyperlink{classLivro_ac5304cf9477e2576fa7e394ca19ea92b}{get\+Total\+Copias}} () const
+\item 
+int \mbox{\hyperlink{classLivro_ae419ba53cb69ea79c89af38d08c4fc5e}{get\+Id\+Livro}} () const
+\item 
+\mbox{\hyperlink{classInfoLivro}{Info\+Livro}} \mbox{\hyperlink{classLivro_aca2334d115f9fe68449e98c7978e5453}{get\+Info\+Livro}} () const
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCopia}{Copia}} $>$ \mbox{\hyperlink{classLivro_ae468cc80ec8866d2ca4408acbdfa639d}{get\+Copias}} ()
+\item 
+void \mbox{\hyperlink{classLivro_aab28ccad527eecf72e99afa7e6b11e13}{adicionar\+Copia}} (bool print=false)
+\item 
+void \mbox{\hyperlink{classLivro_afc6211180288ed9395924e8800388c8a}{atualizar\+Reservas}} ()
+\item 
+void \mbox{\hyperlink{classLivro_abba7feeae0ff961382cbc31ff62c2b29}{informacoes}} ()
+\item 
+void \mbox{\hyperlink{classLivro_a1ee95155a8740ec7417a3734de6b0612}{remover\+Copia}} (int id\+Copia)
+\item 
+bool \mbox{\hyperlink{classLivro_a6b2aacc72fc5170334faf1a14a5a5ffd}{emprestar\+Copia}} (int user\+Id, int id\+Copia, int dias)
+\item 
+bool \mbox{\hyperlink{classLivro_a56f3a6ca17ad490f6169f8be927c485a}{reservar\+Copia}} (int user\+Id, int id\+Copia)
+\item 
+bool \mbox{\hyperlink{classLivro_ae5ef2e7d140c615043a68f44f8f9b60c}{renovar\+Copia}} (int user\+Id, int id\+Copia, int dias)
+\item 
+bool \mbox{\hyperlink{classLivro_a033fdd99489783e573378fcb957bacfb}{liberar\+Copia}} (int id\+Copia)
+\item 
+void \mbox{\hyperlink{classLivro_a30772c719239707bfe837797f61bfa49}{ver\+Aluguel}} (int id\+Copia)
+\item 
+bool \mbox{\hyperlink{classLivro_a923cd864a3d1b35023e9b29a8a5369c1}{ver\+Reserva}} (int id\+Copia, int id\+Usuario)
+\item 
+\mbox{\Hypertarget{classLivro_a2ece4cd0fd9a1771b8d5b8a67780a7dc}\label{classLivro_a2ece4cd0fd9a1771b8d5b8a67780a7dc}} 
+double {\bfseries calcular\+Multa\+Total} (int Id\+User)
+\item 
+\mbox{\Hypertarget{classLivro_a7783917aa9e2cb5d268d3653e82ef112}\label{classLivro_a7783917aa9e2cb5d268d3653e82ef112}} 
+bool {\bfseries quitar\+Multa} (int id\+Copia)
+\item 
+\mbox{\Hypertarget{classLivro_a6c7e716121860e9cdddf3b380b482814}\label{classLivro_a6c7e716121860e9cdddf3b380b482814}} 
+bool {\bfseries pagar\+Multa} (int id\+Copia, double valor)
+\item 
+\mbox{\Hypertarget{classLivro_ae9f06d468c5f226542b7d3c0a8e3ea09}\label{classLivro_ae9f06d468c5f226542b7d3c0a8e3ea09}} 
+std\+::string {\bfseries get\+Data\+Devolucao} (int id\+Copia)
+\end{DoxyCompactItemize}
+\doxysubsection*{Membros Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classLivro_a26daea4a0ebf6532d19d309cfd51533d}{encontrar\+Copia}} (int id\+Copia) const
+\item 
+std\+::tm \mbox{\hyperlink{classLivro_aa698a889198a986a78f92d1e7acc6dd2}{data\+Atual}} ()
+\item 
+std\+::tm \mbox{\hyperlink{classLivro_acbde0c376565e869fced8c83e058aa8d}{Str\+Para\+Tm}} (const std\+::string \&data\+String)
+\item 
+std\+::string \mbox{\hyperlink{classLivro_a5befa2fc57ce7d58fc3d2006935cd733}{Tm\+Para\+String}} (const std\+::tm \&tm\+Data)
+\item 
+int \mbox{\hyperlink{classLivro_a434221dec89e7bee73809c116c6ba581}{calcular\+Dif\+Dias}} (const std\+::tm \&tm\+Data1, const std\+::tm \&tm\+Data2)
+\item 
+std\+::tm \mbox{\hyperlink{classLivro_ad579794c8b0828ce558a58eb6a5ca3d0}{adicionar\+Dias}} (const std\+::tm \&data, int n\+Dias)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe que representa todas cópias de um livro no acervo da Biblioteca. A classe é uma composição das informações do livro como nome e autor e a lista das cópias, cada cópia possui os atributos necessários para gerenciar os empréstimos, renovações e reesrvas no que tange os livros, sendo que os atributos dos usuários são alterados dentro da Classe \mbox{\hyperlink{classPessoa}{Pessoa}}. 
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{classLivro_ad30410b2c31f99ce6cbf30285f36d546}\label{classLivro_ad30410b2c31f99ce6cbf30285f36d546}} 
+\index{Livro@{Livro}!Livro@{Livro}}
+\index{Livro@{Livro}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{Livro()}{Livro()}}
+{\footnotesize\ttfamily Livro\+::\+Livro (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classInfoLivro}{Info\+Livro}} \&}]{info\+Livro }\end{DoxyParamCaption})}
+
+Construtor da classe \mbox{\hyperlink{classLivro}{Livro}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em info\+Livro} & As informações do livro. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLivro_a1f3b49a5fbaf89727b0d0317e128655f}\label{classLivro_a1f3b49a5fbaf89727b0d0317e128655f}} 
+\index{Livro@{Livro}!````~Livro@{$\sim$Livro}}
+\index{````~Livro@{$\sim$Livro}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{$\sim$Livro()}{~Livro()}}
+{\footnotesize\ttfamily Livro\+::$\sim$\+Livro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destrutor da classe \mbox{\hyperlink{classLivro}{Livro}}. 
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classLivro_aab28ccad527eecf72e99afa7e6b11e13}\label{classLivro_aab28ccad527eecf72e99afa7e6b11e13}} 
+\index{Livro@{Livro}!adicionarCopia@{adicionarCopia}}
+\index{adicionarCopia@{adicionarCopia}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{adicionarCopia()}{adicionarCopia()}}
+{\footnotesize\ttfamily void Livro\+::adicionar\+Copia (\begin{DoxyParamCaption}\item[{bool}]{print = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Adiciona uma nova cópia ao livro. 
+\begin{DoxyParams}{Parâmetros}
+{\em print} & indica se o método deve printar os ids da cópia adicionada. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLivro_ad579794c8b0828ce558a58eb6a5ca3d0}\label{classLivro_ad579794c8b0828ce558a58eb6a5ca3d0}} 
+\index{Livro@{Livro}!adicionarDias@{adicionarDias}}
+\index{adicionarDias@{adicionarDias}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{adicionarDias()}{adicionarDias()}}
+{\footnotesize\ttfamily std\+::tm Livro\+::adicionar\+Dias (\begin{DoxyParamCaption}\item[{const std\+::tm \&}]{data,  }\item[{int}]{n\+Dias }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Adiciona um número de dias a uma data. 
+\begin{DoxyParams}{Parâmetros}
+{\em data} & A data. \\
+\hline
+{\em n\+Dias} & O número de dias a serem adicionados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+A nova data resultante da adição dos dias. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLivro_afc6211180288ed9395924e8800388c8a}\label{classLivro_afc6211180288ed9395924e8800388c8a}} 
+\index{Livro@{Livro}!atualizarReservas@{atualizarReservas}}
+\index{atualizarReservas@{atualizarReservas}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{atualizarReservas()}{atualizarReservas()}}
+{\footnotesize\ttfamily void Livro\+::atualizar\+Reservas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Atualiza as reservas das cópias do livro. \mbox{\Hypertarget{classLivro_a434221dec89e7bee73809c116c6ba581}\label{classLivro_a434221dec89e7bee73809c116c6ba581}} 
+\index{Livro@{Livro}!calcularDifDias@{calcularDifDias}}
+\index{calcularDifDias@{calcularDifDias}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{calcularDifDias()}{calcularDifDias()}}
+{\footnotesize\ttfamily int Livro\+::calcular\+Dif\+Dias (\begin{DoxyParamCaption}\item[{const std\+::tm \&}]{tm\+Data1,  }\item[{const std\+::tm \&}]{tm\+Data2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Calcula a diferença em dias entre duas datas. 
+\begin{DoxyParams}{Parâmetros}
+{\em tm\+Data1} & A primeira data. \\
+\hline
+{\em tm\+Data2} & A segunda data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+A diferença em dias entre as duas datas. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLivro_aa698a889198a986a78f92d1e7acc6dd2}\label{classLivro_aa698a889198a986a78f92d1e7acc6dd2}} 
+\index{Livro@{Livro}!dataAtual@{dataAtual}}
+\index{dataAtual@{dataAtual}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{dataAtual()}{dataAtual()}}
+{\footnotesize\ttfamily std\+::tm Livro\+::data\+Atual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Obtém a data atual. \begin{DoxyReturn}{Retorna}
+A data atual. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLivro_a6b2aacc72fc5170334faf1a14a5a5ffd}\label{classLivro_a6b2aacc72fc5170334faf1a14a5a5ffd}} 
+\index{Livro@{Livro}!emprestarCopia@{emprestarCopia}}
+\index{emprestarCopia@{emprestarCopia}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{emprestarCopia()}{emprestarCopia()}}
+{\footnotesize\ttfamily bool Livro\+::emprestar\+Copia (\begin{DoxyParamCaption}\item[{int}]{user\+Id,  }\item[{int}]{id\+Copia,  }\item[{int}]{dias }\end{DoxyParamCaption})}
+
+Realiza o empréstimo de uma cópia do livro para um usuário. 
+\begin{DoxyParams}{Parâmetros}
+{\em user\+Id} & O ID do usuário que está fazendo o empréstimo. \\
+\hline
+{\em id\+Copia} & O ID da cópia a ser emprestada. \\
+\hline
+{\em dias} & O número de dias de empréstimo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Verdadeiro se o empréstimo for realizado com sucesso, falso caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLivro_a26daea4a0ebf6532d19d309cfd51533d}\label{classLivro_a26daea4a0ebf6532d19d309cfd51533d}} 
+\index{Livro@{Livro}!encontrarCopia@{encontrarCopia}}
+\index{encontrarCopia@{encontrarCopia}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{encontrarCopia()}{encontrarCopia()}}
+{\footnotesize\ttfamily int Livro\+::encontrar\+Copia (\begin{DoxyParamCaption}\item[{int}]{id\+Copia }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Encontra a posição de uma cópia no vetor de cópias do livro com base no seu ID. 
+\begin{DoxyParams}{Parâmetros}
+{\em id\+Copia} & O ID da cópia a ser encontrada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+A posição da cópia no vetor, ou -\/1 se a cópia não for encontrada. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLivro_ae468cc80ec8866d2ca4408acbdfa639d}\label{classLivro_ae468cc80ec8866d2ca4408acbdfa639d}} 
+\index{Livro@{Livro}!getCopias@{getCopias}}
+\index{getCopias@{getCopias}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{getCopias()}{getCopias()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCopia}{Copia}} $>$ Livro\+::get\+Copias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtém as cópias do livro. \begin{DoxyReturn}{Retorna}
+Um vetor contendo as cópias do livro. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLivro_ae419ba53cb69ea79c89af38d08c4fc5e}\label{classLivro_ae419ba53cb69ea79c89af38d08c4fc5e}} 
+\index{Livro@{Livro}!getIdLivro@{getIdLivro}}
+\index{getIdLivro@{getIdLivro}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{getIdLivro()}{getIdLivro()}}
+{\footnotesize\ttfamily int Livro\+::get\+Id\+Livro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Obtém o ID do livro. \begin{DoxyReturn}{Retorna}
+O ID do livro. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLivro_aca2334d115f9fe68449e98c7978e5453}\label{classLivro_aca2334d115f9fe68449e98c7978e5453}} 
+\index{Livro@{Livro}!getInfoLivro@{getInfoLivro}}
+\index{getInfoLivro@{getInfoLivro}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{getInfoLivro()}{getInfoLivro()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classInfoLivro}{Info\+Livro}} Livro\+::get\+Info\+Livro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Obtém as informações do livro. \begin{DoxyReturn}{Retorna}
+As informações do livro. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLivro_ac5304cf9477e2576fa7e394ca19ea92b}\label{classLivro_ac5304cf9477e2576fa7e394ca19ea92b}} 
+\index{Livro@{Livro}!getTotalCopias@{getTotalCopias}}
+\index{getTotalCopias@{getTotalCopias}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{getTotalCopias()}{getTotalCopias()}}
+{\footnotesize\ttfamily int Livro\+::get\+Total\+Copias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Obtém o número total de cópias do livro. \begin{DoxyReturn}{Retorna}
+O número total de cópias. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLivro_aba6bda6acfe276f93baed230c0b3fbdc}\label{classLivro_aba6bda6acfe276f93baed230c0b3fbdc}} 
+\index{Livro@{Livro}!getTotalDisponiveis@{getTotalDisponiveis}}
+\index{getTotalDisponiveis@{getTotalDisponiveis}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{getTotalDisponiveis()}{getTotalDisponiveis()}}
+{\footnotesize\ttfamily int Livro\+::get\+Total\+Disponiveis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Obtém o número total de cópias disponíveis do livro. \begin{DoxyReturn}{Retorna}
+O número total de cópias disponíveis. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLivro_a38ff758b94a675a9ca671738a7d2b1de}\label{classLivro_a38ff758b94a675a9ca671738a7d2b1de}} 
+\index{Livro@{Livro}!getTotalReservados@{getTotalReservados}}
+\index{getTotalReservados@{getTotalReservados}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{getTotalReservados()}{getTotalReservados()}}
+{\footnotesize\ttfamily int Livro\+::get\+Total\+Reservados (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtém o número total de cópias reservadas do livro. \begin{DoxyReturn}{Retorna}
+O número total de cópias reservadas. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLivro_abba7feeae0ff961382cbc31ff62c2b29}\label{classLivro_abba7feeae0ff961382cbc31ff62c2b29}} 
+\index{Livro@{Livro}!informacoes@{informacoes}}
+\index{informacoes@{informacoes}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{informacoes()}{informacoes()}}
+{\footnotesize\ttfamily void Livro\+::informacoes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Mostra informações sobre o livro e suas cópias. \mbox{\Hypertarget{classLivro_a033fdd99489783e573378fcb957bacfb}\label{classLivro_a033fdd99489783e573378fcb957bacfb}} 
+\index{Livro@{Livro}!liberarCopia@{liberarCopia}}
+\index{liberarCopia@{liberarCopia}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{liberarCopia()}{liberarCopia()}}
+{\footnotesize\ttfamily bool Livro\+::liberar\+Copia (\begin{DoxyParamCaption}\item[{int}]{id\+Copia }\end{DoxyParamCaption})}
+
+Libera uma cópia do livro após a devolução. 
+\begin{DoxyParams}{Parâmetros}
+{\em id\+Copia} & O ID da cópia a ser liberada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Verdadeiro se a liberação for realizada com sucesso, falso caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLivro_a1ee95155a8740ec7417a3734de6b0612}\label{classLivro_a1ee95155a8740ec7417a3734de6b0612}} 
+\index{Livro@{Livro}!removerCopia@{removerCopia}}
+\index{removerCopia@{removerCopia}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{removerCopia()}{removerCopia()}}
+{\footnotesize\ttfamily void Livro\+::remover\+Copia (\begin{DoxyParamCaption}\item[{int}]{id\+Copia }\end{DoxyParamCaption})}
+
+Remove uma cópia do livro com base no seu ID. 
+\begin{DoxyParams}{Parâmetros}
+{\em id\+Copia} & O ID da cópia a ser removida. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLivro_ae5ef2e7d140c615043a68f44f8f9b60c}\label{classLivro_ae5ef2e7d140c615043a68f44f8f9b60c}} 
+\index{Livro@{Livro}!renovarCopia@{renovarCopia}}
+\index{renovarCopia@{renovarCopia}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{renovarCopia()}{renovarCopia()}}
+{\footnotesize\ttfamily bool Livro\+::renovar\+Copia (\begin{DoxyParamCaption}\item[{int}]{user\+Id,  }\item[{int}]{id\+Copia,  }\item[{int}]{dias }\end{DoxyParamCaption})}
+
+Renova o empréstimo de uma cópia do livro para um usuário. 
+\begin{DoxyParams}{Parâmetros}
+{\em user\+Id} & O ID do usuário que está renovando o empréstimo. \\
+\hline
+{\em id\+Copia} & O ID da cópia a ser renovada. \\
+\hline
+{\em dias} & O número de dias de renovação. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Verdadeiro se a renovação for realizada com sucesso, falso caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLivro_a56f3a6ca17ad490f6169f8be927c485a}\label{classLivro_a56f3a6ca17ad490f6169f8be927c485a}} 
+\index{Livro@{Livro}!reservarCopia@{reservarCopia}}
+\index{reservarCopia@{reservarCopia}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{reservarCopia()}{reservarCopia()}}
+{\footnotesize\ttfamily bool Livro\+::reservar\+Copia (\begin{DoxyParamCaption}\item[{int}]{user\+Id,  }\item[{int}]{id\+Copia }\end{DoxyParamCaption})}
+
+Realiza a reserva de uma cópia do livro para um usuário. 
+\begin{DoxyParams}{Parâmetros}
+{\em user\+Id} & O ID do usuário que está fazendo a reserva. \\
+\hline
+{\em id\+Copia} & O ID da cópia a ser reservada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Verdadeiro se a reserva for realizada com sucesso, falso caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLivro_acbde0c376565e869fced8c83e058aa8d}\label{classLivro_acbde0c376565e869fced8c83e058aa8d}} 
+\index{Livro@{Livro}!StrParaTm@{StrParaTm}}
+\index{StrParaTm@{StrParaTm}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{StrParaTm()}{StrParaTm()}}
+{\footnotesize\ttfamily std\+::tm Livro\+::\+Str\+Para\+Tm (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Converte uma string de data em uma estrutura tm. 
+\begin{DoxyParams}{Parâmetros}
+{\em data\+String} & A string de data a ser convertida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+A estrutura tm correspondente à data. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLivro_a5befa2fc57ce7d58fc3d2006935cd733}\label{classLivro_a5befa2fc57ce7d58fc3d2006935cd733}} 
+\index{Livro@{Livro}!TmParaString@{TmParaString}}
+\index{TmParaString@{TmParaString}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{TmParaString()}{TmParaString()}}
+{\footnotesize\ttfamily std\+::string Livro\+::\+Tm\+Para\+String (\begin{DoxyParamCaption}\item[{const std\+::tm \&}]{tm\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Converte uma estrutura tm em uma string de data. 
+\begin{DoxyParams}{Parâmetros}
+{\em tm\+Data} & A estrutura tm contendo a data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+A string de data correspondente. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLivro_a30772c719239707bfe837797f61bfa49}\label{classLivro_a30772c719239707bfe837797f61bfa49}} 
+\index{Livro@{Livro}!verAluguel@{verAluguel}}
+\index{verAluguel@{verAluguel}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{verAluguel()}{verAluguel()}}
+{\footnotesize\ttfamily void Livro\+::ver\+Aluguel (\begin{DoxyParamCaption}\item[{int}]{id\+Copia }\end{DoxyParamCaption})}
+
+Exibe as informações de aluguel de uma cópia do livro. 
+\begin{DoxyParams}{Parâmetros}
+{\em id\+Copia} & O ID da cópia. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLivro_a923cd864a3d1b35023e9b29a8a5369c1}\label{classLivro_a923cd864a3d1b35023e9b29a8a5369c1}} 
+\index{Livro@{Livro}!verReserva@{verReserva}}
+\index{verReserva@{verReserva}!Livro@{Livro}}
+\doxysubsubsection{\texorpdfstring{verReserva()}{verReserva()}}
+{\footnotesize\ttfamily bool Livro\+::ver\+Reserva (\begin{DoxyParamCaption}\item[{int}]{id\+Copia,  }\item[{int}]{id\+Usuario }\end{DoxyParamCaption})}
+
+Verifica se uma cópia do livro está reservada por um usuário e exibe as informações de reserva da cópia do livro. 
+\begin{DoxyParams}{Parâmetros}
+{\em id\+Copia} & O ID da cópia. \\
+\hline
+{\em id\+Usuario} & O ID do usuário. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Verdadeiro se a cópia estiver reservada pelo usuário, falso caso contrário. 
+\end{DoxyReturn}
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/livro/Livro.\+hpp\item 
+src/livro/Livro.\+cpp\end{DoxyCompactItemize}

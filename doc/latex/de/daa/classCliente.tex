@@ -1,0 +1,242 @@
+\hypertarget{classCliente}{}\doxysection{Referência da Classe Cliente}
+\label{classCliente}\index{Cliente@{Cliente}}
+
+
+Classe derivada de \mbox{\hyperlink{classPessoa}{Pessoa}} que representa um cliente da biblioteca.  
+
+
+
+
+{\ttfamily \#include $<$Cliente.\+hpp$>$}
+
+
+
+Diagrama de hierarquia para Cliente\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{da/da6/classCliente__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboração para Cliente\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{db/dcb/classCliente__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCliente_abed4256be2aac779be233551eb3c2680}{Cliente}} (const std\+::string \&nome, const std\+::string \&data\+Ingresso, int senha=-\/1)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classCliente}{Cliente}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCliente_a29d1d53394350c66363109e33c990b58}\label{classCliente_a29d1d53394350c66363109e33c990b58}} 
+\mbox{\hyperlink{classCliente_a29d1d53394350c66363109e33c990b58}{$\sim$\+Cliente}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{classCliente}{Cliente}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classCliente_a812126f76d34f45a10018158ec13755c}{consultar\+Livros\+Alugados}} (std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&acervo)
+\begin{DoxyCompactList}\small\item\em Consulta os livros alugados pela pessoa. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classCliente_a5ef3b12fdfeb478771aec3a7a881ed2c}{consultar\+Livros\+Reservados}} (std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&acervo)
+\begin{DoxyCompactList}\small\item\em Consulta os livros reservados pela pessoa. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classCliente_a3ead691e4eee8fd9b91bc4e19c5bd8b8}{reservar\+Livro}} (const int id\+Livro, int id\+Copia, std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&acervo)
+\begin{DoxyCompactList}\small\item\em Reserva um livro. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classCliente_ab5bf01a412f1130f8fb7595149fd6b43}{renovar\+Emprestimo}} (const int id\+Livro, std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&acervo)
+\begin{DoxyCompactList}\small\item\em Renova o empréstimo de um livro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCliente_a57862a2e71c9b8097882b024b07d2724}{liberar\+Aluguel}} (int id\+Livro)
+\begin{DoxyCompactList}\small\item\em Libera um aluguel, removendo-\/o da lista de alugueis do cliente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCliente_a2192c1391e7022af1f022194bac1bc80}{set\+Alugueis}} (const \mbox{\hyperlink{classAluguel}{Aluguel}} $\ast$alugueis, int tamanho)
+\begin{DoxyCompactList}\small\item\em Define os aluguéis do cliente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membros Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classCliente_a91f9f607ecb8e46b387956805608a90f}{checar\+Alugueis}} (const int id\+Livro)
+\begin{DoxyCompactList}\small\item\em Verifica se o usuário já possui o limite de aluguéis e reservas da Biblioteca atingido e retorna a posição do atributo \+\_\+alugueis que serão armazenadas as informações do próximo Empréstimo ou Reserva de um livro especifico. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classCliente_a22aa222077aa057b940a0eddd207d1ae}{\+\_\+dias\+Emprestimo}} = 7
+\item 
+\mbox{\hyperlink{classAluguel}{Aluguel}} \mbox{\hyperlink{classCliente_a90e8c715db3e44eb6d55983377263693}{\+\_\+alugueis}} \mbox{[}\mbox{\hyperlink{classCliente_a6d718c82bf4d94f4b5811c8937bfd2db}{\+\_\+limite}}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Estáticos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{classCliente_a6d718c82bf4d94f4b5811c8937bfd2db}{\+\_\+limite}} = 3
+\end{DoxyCompactItemize}
+\doxysubsection*{Outros membros herdados}
+
+
+\doxysubsection{Descrição detalhada}
+Classe derivada de \mbox{\hyperlink{classPessoa}{Pessoa}} que representa um cliente da biblioteca. 
+
+Um cliente é uma pessoa que possui informações pessoais e tem a capacidade de buscar livros, alugar e reservar. 
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{classCliente_abed4256be2aac779be233551eb3c2680}\label{classCliente_abed4256be2aac779be233551eb3c2680}} 
+\index{Cliente@{Cliente}!Cliente@{Cliente}}
+\index{Cliente@{Cliente}!Cliente@{Cliente}}
+\doxysubsubsection{\texorpdfstring{Cliente()}{Cliente()}}
+{\footnotesize\ttfamily Cliente\+::\+Cliente (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome,  }\item[{const std\+::string \&}]{data\+Ingresso,  }\item[{int}]{senha = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classCliente}{Cliente}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & O nome do cliente. \\
+\hline
+{\em data\+Ingresso} & A data de ingresso do cliente na biblioteca. \\
+\hline
+{\em senha} & A senha do cliente (opcional, padrão = -\/1\+:). É aleatorizada na instanciação se for mantida com o valor padrão. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classCliente_a91f9f607ecb8e46b387956805608a90f}\label{classCliente_a91f9f607ecb8e46b387956805608a90f}} 
+\index{Cliente@{Cliente}!checarAlugueis@{checarAlugueis}}
+\index{checarAlugueis@{checarAlugueis}!Cliente@{Cliente}}
+\doxysubsubsection{\texorpdfstring{checarAlugueis()}{checarAlugueis()}}
+{\footnotesize\ttfamily int Cliente\+::checar\+Alugueis (\begin{DoxyParamCaption}\item[{const int}]{id\+Livro }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Verifica se o usuário já possui o limite de aluguéis e reservas da Biblioteca atingido e retorna a posição do atributo \+\_\+alugueis que serão armazenadas as informações do próximo Empréstimo ou Reserva de um livro especifico. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id\+Livro} & O ID do livro a ser verificado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+A posição do atributo \+\_\+alugueis que será usada para armazenar informações sobre o empréstimo ou reserva. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCliente_a812126f76d34f45a10018158ec13755c}\label{classCliente_a812126f76d34f45a10018158ec13755c}} 
+\index{Cliente@{Cliente}!consultarLivrosAlugados@{consultarLivrosAlugados}}
+\index{consultarLivrosAlugados@{consultarLivrosAlugados}!Cliente@{Cliente}}
+\doxysubsubsection{\texorpdfstring{consultarLivrosAlugados()}{consultarLivrosAlugados()}}
+{\footnotesize\ttfamily void Cliente\+::consultar\+Livros\+Alugados (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&}]{acervo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Consulta os livros alugados pela pessoa. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em acervo} & O vetor de livros do acervo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCliente_a5ef3b12fdfeb478771aec3a7a881ed2c}\label{classCliente_a5ef3b12fdfeb478771aec3a7a881ed2c}} 
+\index{Cliente@{Cliente}!consultarLivrosReservados@{consultarLivrosReservados}}
+\index{consultarLivrosReservados@{consultarLivrosReservados}!Cliente@{Cliente}}
+\doxysubsubsection{\texorpdfstring{consultarLivrosReservados()}{consultarLivrosReservados()}}
+{\footnotesize\ttfamily void Cliente\+::consultar\+Livros\+Reservados (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&}]{acervo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Consulta os livros reservados pela pessoa. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em acervo} & O vetor de livros do acervo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCliente_a57862a2e71c9b8097882b024b07d2724}\label{classCliente_a57862a2e71c9b8097882b024b07d2724}} 
+\index{Cliente@{Cliente}!liberarAluguel@{liberarAluguel}}
+\index{liberarAluguel@{liberarAluguel}!Cliente@{Cliente}}
+\doxysubsubsection{\texorpdfstring{liberarAluguel()}{liberarAluguel()}}
+{\footnotesize\ttfamily void Cliente\+::liberar\+Aluguel (\begin{DoxyParamCaption}\item[{int}]{id\+Livro }\end{DoxyParamCaption})}
+
+
+
+Libera um aluguel, removendo-\/o da lista de alugueis do cliente. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id\+Livro} & O ID do livro a ter o aluguel liberado. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCliente_ab5bf01a412f1130f8fb7595149fd6b43}\label{classCliente_ab5bf01a412f1130f8fb7595149fd6b43}} 
+\index{Cliente@{Cliente}!renovarEmprestimo@{renovarEmprestimo}}
+\index{renovarEmprestimo@{renovarEmprestimo}!Cliente@{Cliente}}
+\doxysubsubsection{\texorpdfstring{renovarEmprestimo()}{renovarEmprestimo()}}
+{\footnotesize\ttfamily void Cliente\+::renovar\+Emprestimo (\begin{DoxyParamCaption}\item[{const int}]{id\+Livro,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&}]{acervo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Renova o empréstimo de um livro. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id\+Livro} & O ID do livro a ter o empréstimo renovado. \\
+\hline
+{\em acervo} & O vetor de livros do acervo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCliente_a3ead691e4eee8fd9b91bc4e19c5bd8b8}\label{classCliente_a3ead691e4eee8fd9b91bc4e19c5bd8b8}} 
+\index{Cliente@{Cliente}!reservarLivro@{reservarLivro}}
+\index{reservarLivro@{reservarLivro}!Cliente@{Cliente}}
+\doxysubsubsection{\texorpdfstring{reservarLivro()}{reservarLivro()}}
+{\footnotesize\ttfamily void Cliente\+::reservar\+Livro (\begin{DoxyParamCaption}\item[{const int}]{id\+Livro,  }\item[{int}]{id\+Copia,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classLivro}{Livro}} $>$ \&}]{acervo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reserva um livro. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id\+Livro} & O ID do livro a ser reservado. \\
+\hline
+{\em id\+Copia} & O ID da cópia do livro a ser reservado. \\
+\hline
+{\em acervo} & O vetor de livros do acervo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCliente_a2192c1391e7022af1f022194bac1bc80}\label{classCliente_a2192c1391e7022af1f022194bac1bc80}} 
+\index{Cliente@{Cliente}!setAlugueis@{setAlugueis}}
+\index{setAlugueis@{setAlugueis}!Cliente@{Cliente}}
+\doxysubsubsection{\texorpdfstring{setAlugueis()}{setAlugueis()}}
+{\footnotesize\ttfamily void Cliente\+::set\+Alugueis (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAluguel}{Aluguel}} $\ast$}]{alugueis,  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Define os aluguéis do cliente. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em alugueis} & Um ponteiro para o array de aluguéis. \\
+\hline
+{\em tamanho} & O tamanho do array de aluguéis. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Atributos}
+\mbox{\Hypertarget{classCliente_a90e8c715db3e44eb6d55983377263693}\label{classCliente_a90e8c715db3e44eb6d55983377263693}} 
+\index{Cliente@{Cliente}!\_alugueis@{\_alugueis}}
+\index{\_alugueis@{\_alugueis}!Cliente@{Cliente}}
+\doxysubsubsection{\texorpdfstring{\_alugueis}{\_alugueis}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAluguel}{Aluguel}} Cliente\+::\+\_\+alugueis\mbox{[}\mbox{\hyperlink{classCliente_a6d718c82bf4d94f4b5811c8937bfd2db}{\+\_\+limite}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vetor de alugueis do usuário. \mbox{\Hypertarget{classCliente_a22aa222077aa057b940a0eddd207d1ae}\label{classCliente_a22aa222077aa057b940a0eddd207d1ae}} 
+\index{Cliente@{Cliente}!\_diasEmprestimo@{\_diasEmprestimo}}
+\index{\_diasEmprestimo@{\_diasEmprestimo}!Cliente@{Cliente}}
+\doxysubsubsection{\texorpdfstring{\_diasEmprestimo}{\_diasEmprestimo}}
+{\footnotesize\ttfamily int Cliente\+::\+\_\+dias\+Emprestimo = 7\hspace{0.3cm}{\ttfamily [protected]}}
+
+Número de dias de empréstimo padrão. \mbox{\Hypertarget{classCliente_a6d718c82bf4d94f4b5811c8937bfd2db}\label{classCliente_a6d718c82bf4d94f4b5811c8937bfd2db}} 
+\index{Cliente@{Cliente}!\_limite@{\_limite}}
+\index{\_limite@{\_limite}!Cliente@{Cliente}}
+\doxysubsubsection{\texorpdfstring{\_limite}{\_limite}}
+{\footnotesize\ttfamily const int Cliente\+::\+\_\+limite = 3\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Limite de livros reservados/alugados por usuário. 
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/pessoa/Cliente.\+hpp\item 
+src/pessoa/Cliente.\+cpp\end{DoxyCompactItemize}

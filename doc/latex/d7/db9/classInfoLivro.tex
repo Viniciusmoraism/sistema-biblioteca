@@ -1,0 +1,119 @@
+\hypertarget{classInfoLivro}{}\doxysection{Referência da Classe Info\+Livro}
+\label{classInfoLivro}\index{InfoLivro@{InfoLivro}}
+
+
+{\ttfamily \#include $<$Info\+Livro.\+hpp$>$}
+
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classInfoLivro_a825e9475cfff2edb2cfbdc4057af7d49}{Info\+Livro}} (const std\+::string \&nome, const std\+::string \&autor, int edicao, const std\+::string \&genero)
+\item 
+\mbox{\hyperlink{classInfoLivro_a6e25c53aa423623507a0cd06490a2e3c}{$\sim$\+Info\+Livro}} ()
+\item 
+std\+::string \mbox{\hyperlink{classInfoLivro_a9792e84cb6224353a6a53c326fe1ac9d}{get\+Nome}} () const
+\item 
+std\+::string \mbox{\hyperlink{classInfoLivro_aceb6ab7419c00dd9f166978fc88f467a}{get\+Autor}} () const
+\item 
+std\+::string \mbox{\hyperlink{classInfoLivro_a28e58fda9f8982854dd17e3ac291c3ea}{get\+Genero}} () const
+\item 
+int \mbox{\hyperlink{classInfoLivro_a2d9c96819d057d599c161006f0a65a7c}{get\+Edicao}} () const
+\item 
+void \mbox{\hyperlink{classInfoLivro_a8500c4aa80b4b937738af3b89eeb5543}{informacoes}} () const
+\item 
+bool \mbox{\hyperlink{classInfoLivro_a9fd5892b5d969380f65154bdb7d3a3f2}{operator==}} (const \mbox{\hyperlink{classInfoLivro}{Info\+Livro}} \&outro) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe responsável por armazenar informações sobre um livro. 
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{classInfoLivro_a825e9475cfff2edb2cfbdc4057af7d49}\label{classInfoLivro_a825e9475cfff2edb2cfbdc4057af7d49}} 
+\index{InfoLivro@{InfoLivro}!InfoLivro@{InfoLivro}}
+\index{InfoLivro@{InfoLivro}!InfoLivro@{InfoLivro}}
+\doxysubsubsection{\texorpdfstring{InfoLivro()}{InfoLivro()}}
+{\footnotesize\ttfamily Info\+Livro\+::\+Info\+Livro (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome,  }\item[{const std\+::string \&}]{autor,  }\item[{int}]{edicao,  }\item[{const std\+::string \&}]{genero }\end{DoxyParamCaption})}
+
+Construtor da classe \mbox{\hyperlink{classInfoLivro}{Info\+Livro}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & O nome do livro. \\
+\hline
+{\em autor} & O autor do livro. \\
+\hline
+{\em edicao} & O número da edição do livro. \\
+\hline
+{\em genero} & O gênero do livro. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInfoLivro_a6e25c53aa423623507a0cd06490a2e3c}\label{classInfoLivro_a6e25c53aa423623507a0cd06490a2e3c}} 
+\index{InfoLivro@{InfoLivro}!````~InfoLivro@{$\sim$InfoLivro}}
+\index{````~InfoLivro@{$\sim$InfoLivro}!InfoLivro@{InfoLivro}}
+\doxysubsubsection{\texorpdfstring{$\sim$InfoLivro()}{~InfoLivro()}}
+{\footnotesize\ttfamily Info\+Livro\+::$\sim$\+Info\+Livro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destrutor da classe \mbox{\hyperlink{classInfoLivro}{Info\+Livro}}. 
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classInfoLivro_aceb6ab7419c00dd9f166978fc88f467a}\label{classInfoLivro_aceb6ab7419c00dd9f166978fc88f467a}} 
+\index{InfoLivro@{InfoLivro}!getAutor@{getAutor}}
+\index{getAutor@{getAutor}!InfoLivro@{InfoLivro}}
+\doxysubsubsection{\texorpdfstring{getAutor()}{getAutor()}}
+{\footnotesize\ttfamily std\+::string Info\+Livro\+::get\+Autor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Obtém o autor do livro. \begin{DoxyReturn}{Retorna}
+O autor do livro. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInfoLivro_a2d9c96819d057d599c161006f0a65a7c}\label{classInfoLivro_a2d9c96819d057d599c161006f0a65a7c}} 
+\index{InfoLivro@{InfoLivro}!getEdicao@{getEdicao}}
+\index{getEdicao@{getEdicao}!InfoLivro@{InfoLivro}}
+\doxysubsubsection{\texorpdfstring{getEdicao()}{getEdicao()}}
+{\footnotesize\ttfamily int Info\+Livro\+::get\+Edicao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Obtém o número da edição do livro. \begin{DoxyReturn}{Retorna}
+O número da edição do livro. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInfoLivro_a28e58fda9f8982854dd17e3ac291c3ea}\label{classInfoLivro_a28e58fda9f8982854dd17e3ac291c3ea}} 
+\index{InfoLivro@{InfoLivro}!getGenero@{getGenero}}
+\index{getGenero@{getGenero}!InfoLivro@{InfoLivro}}
+\doxysubsubsection{\texorpdfstring{getGenero()}{getGenero()}}
+{\footnotesize\ttfamily std\+::string Info\+Livro\+::get\+Genero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Obtém o gênero do livro. \begin{DoxyReturn}{Retorna}
+O gênero do livro. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInfoLivro_a9792e84cb6224353a6a53c326fe1ac9d}\label{classInfoLivro_a9792e84cb6224353a6a53c326fe1ac9d}} 
+\index{InfoLivro@{InfoLivro}!getNome@{getNome}}
+\index{getNome@{getNome}!InfoLivro@{InfoLivro}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily std\+::string Info\+Livro\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Obtém o nome do livro. \begin{DoxyReturn}{Retorna}
+O nome do livro. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInfoLivro_a8500c4aa80b4b937738af3b89eeb5543}\label{classInfoLivro_a8500c4aa80b4b937738af3b89eeb5543}} 
+\index{InfoLivro@{InfoLivro}!informacoes@{informacoes}}
+\index{informacoes@{informacoes}!InfoLivro@{InfoLivro}}
+\doxysubsubsection{\texorpdfstring{informacoes()}{informacoes()}}
+{\footnotesize\ttfamily void Info\+Livro\+::informacoes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Mostra informações sobre o livro. \mbox{\Hypertarget{classInfoLivro_a9fd5892b5d969380f65154bdb7d3a3f2}\label{classInfoLivro_a9fd5892b5d969380f65154bdb7d3a3f2}} 
+\index{InfoLivro@{InfoLivro}!operator==@{operator==}}
+\index{operator==@{operator==}!InfoLivro@{InfoLivro}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Info\+Livro\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classInfoLivro}{Info\+Livro}} \&}]{outro }\end{DoxyParamCaption}) const}
+
+Sobrecarga do operador de igualdade. Verifica se dois objetos \mbox{\hyperlink{classInfoLivro}{Info\+Livro}} são iguais. 
+\begin{DoxyParams}{Parâmetros}
+{\em outro} & O objeto \mbox{\hyperlink{classInfoLivro}{Info\+Livro}} a ser comparado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Verdadeiro se os objetos forem iguais, falso caso contrário. 
+\end{DoxyReturn}
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/livro/Info\+Livro.\+hpp\item 
+src/livro/Info\+Livro.\+cpp\end{DoxyCompactItemize}
