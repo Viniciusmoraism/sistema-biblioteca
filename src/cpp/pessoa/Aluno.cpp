@@ -20,4 +20,19 @@ std::string Aluno::getCurso() const {
     return _curso;
 }
 
-void Aluno::pagarMulta()
+void Aluno::pagarMulta() {/*
+    if (!_livrosAlugados.empty()) {
+        for (Livro& livro : _livrosAlugados) {
+            bool multaPaga = livro.pagarMulta(getId());  // Chama o método pagarMulta() do livro com o ID do aluno
+            if (multaPaga) {
+                std::cout << "Multa paga para o livro: " << livro.getTitulo() << std::endl;
+            }
+        }
+    } else {*/
+        std::cout << "Não há multas para pagar." << std::endl;
+    //}
+}
+
+//bool Aluno::pagarMulta(Livro& livro,) {
+    //return livro.pagarMulta(idUsuario);
+//}
